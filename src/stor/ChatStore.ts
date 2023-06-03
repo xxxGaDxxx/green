@@ -73,7 +73,6 @@ class ChatStore {
 
     try {
       const res = await sendMessage(params);
-      console.log('res', res);
       const newMessage = {
         idMessage: res,
         message,

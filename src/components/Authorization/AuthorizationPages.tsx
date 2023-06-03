@@ -22,12 +22,10 @@ export const AuthorizationPages = observer(() => {
     validationSchema: AuthorizationHelper.getValidationSchema(),
 
     onSubmit: (values: SetSettingsParams) => {
-      console.log('values', values);
       checkData(values);
     },
   });
 
-  console.log('for', formik);
   return (
     <Grid
       container

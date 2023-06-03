@@ -41,12 +41,10 @@ class AppStore {
 
         this.status = STATUS.Success;
       } else {
-        console.log(111111);
         this.textErrors = 'что то пошло не так';
         this.status = STATUS.Error;
       }
     } catch (error) {
-      console.log(error);
       this.status = STATUS.Error;
       this.textErrors = 'что то пошло не так';
     } finally {
